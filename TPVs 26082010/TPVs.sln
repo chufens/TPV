@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TPVs", "TPVs\TPVs.vbproj", "{D6463649-A128-4AE6-BAEE-15C956BF14B8}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{1B47BE3C-5417-46C0-AF86-272D8E188FD6}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Gestion TPV's", "Setup1\Setup1.vdproj", "{1B47BE3C-5417-46C0-AF86-272D8E188FD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
