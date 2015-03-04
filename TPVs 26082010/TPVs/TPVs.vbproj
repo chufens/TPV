@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6463649-A128-4AE6-BAEE-15C956BF14B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>TPVs</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>tpv.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TPVs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TPVs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buscar_Clientes.Designer.vb">
+      <DependentUpon>Buscar_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Buscar_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversor.Designer.vb">
+      <DependentUpon>Conversor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Conversor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Datafonos.Designer.vb">
+      <DependentUpon>Lista_Datafonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Datafonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos.Designer.vb">
+      <DependentUpon>Mantenimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mant_Clientes.Designer.vb">
+      <DependentUpon>Mant_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mant_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Añadir_Datafono.Designer.vb">
+      <DependentUpon>Añadir_Datafono.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Añadir_Datafono.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Envios.Designer.vb">
+      <DependentUpon>Lista_Envios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Envios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar_Datafonos.Designer.vb">
+      <DependentUpon>Modificar_Datafonos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar_Datafonos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Instalaciones.Designer.vb">
+      <DependentUpon>Lista_Instalaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Instalaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_Reparaciones.Designer.vb">
+      <DependentUpon>Lista_Reparaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_Reparaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TPVDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TPVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TPVDataSet.vb">
+      <DependentUpon>TPVDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Añadir_Datafono.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Añadir_Datafono.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buscar_Clientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Buscar_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Conversor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Datafonos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lista_Datafonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Mantenimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mant_Clientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Mant_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Envios.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lista_Envios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar_Datafonos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Modificar_Datafonos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Instalaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lista_Instalaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_Reparaciones.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lista_Reparaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TPVDataSet.xsc">
+      <DependentUpon>TPVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TPVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TPVDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TPVDataSet.xss">
+      <DependentUpon>TPVDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tpv.ico" />
+    <Content Include="TPV.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
